@@ -1,8 +1,7 @@
--- | Main entry point to the application.
 module Main where
-import           Lec4Hw
-a  = convert (1, "l")
--- | The main entry point.
+import           Lec5Scratch
+
+a = MetricMeasurement 2 Meter
 main :: IO ()
 main = do
-    putStrLn $ show a
+    putStrLn $ show (convert a)
