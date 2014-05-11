@@ -1,7 +1,8 @@
 module Main where
-import           Lec5Scratch
+import           Lec5Hw
 
-a = MetricMeasurement 2 Meter
+a = Tree  5 NilTree NilTree
+b = Tree 6 a (Tree 9 NilTree NilTree)
 main :: IO ()
 main = do
-    putStrLn $ show (convert a)
+    putStrLn $ show( add b )
